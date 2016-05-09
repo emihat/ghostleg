@@ -6,4 +6,4 @@ RUN apk add --update perl && rm -rf /var/cache/apk/*
 
 COPY ghostleg.pl /
 
-CMD ["/usr/bin/perl", "/ghostleg.pl"]
+ENTRYPOINT ["/usr/bin/perl", "/ghostleg.pl"]
